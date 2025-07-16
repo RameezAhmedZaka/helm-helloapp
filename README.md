@@ -1,7 +1,7 @@
 This is a Helm chart for deploying the `helloapp` application on a Kubernetes cluster using Helm.
 
 Project Structure
-
+```
 hellohelm/
 ├── Chart.yaml # Metadata for the Helm chart
 ├── values.yaml # Default configuration values
@@ -12,7 +12,7 @@ hellohelm/
 │ ├── ingress.yaml
 │ ├── _helpers.tpl
 │ └── NOTES.txt
-
+```
 Run nano etc/hosts/ 
 and add hello.local or use minikube ip and remove the host in ingress.yaml file
 
