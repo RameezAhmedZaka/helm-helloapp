@@ -1,5 +1,7 @@
 This is a Helm chart for deploying the `helloapp` application on a Kubernetes cluster using Helm.
+
 Project Structure
+
 hellohelm/
 ├── Chart.yaml # Metadata for the Helm chart
 ├── values.yaml # Default configuration values
@@ -10,4 +12,5 @@ hellohelm/
 │ ├── ingress.yaml
 │ ├── _helpers.tpl
 │ └── NOTES.txt
+
 helm install hellohelm ~/hellohelm
