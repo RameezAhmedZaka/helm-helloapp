@@ -13,4 +13,7 @@ hellohelm/
 │ ├── _helpers.tpl
 │ └── NOTES.txt
 
-helm install hellohelm ~/hellohelm
+helm install hellohelm ~/hellohelm --namespace hellohelm-ns
+helm upgrade hellohelm ~/hellohelm --namespace hellohelm-ns
+helm history hellohelm --namespace hellohelm-ns
+helm uninstall hellohelm --namespace hellohelm-ns
