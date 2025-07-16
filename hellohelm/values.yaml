@@ -1,0 +1,41 @@
+namePrefix: hellohelm
+
+replicaCount: 1
+
+namespace: hellohelm-ns
+
+image:
+  repository: hellohelm
+  tag: latest
+  pullPolicy: IfNotPresent
+
+deployment:
+  name: hellohelm-deploy
+  labels:
+    app: hellohelm-deploy
+    tier: backend
+
+pod:
+  name: hellohelm-pods
+  labels:
+    app: hellohelm-pods
+
+service:
+  name: hellohelm-svc
+  type: ClusterIP
+  port: 5000
+  labels:
+    app: hellohelm-svc
+    usage: internal
+
+ingress:
+  name: hellohelm-ingress
+  labels:
+    app: hellohelm-ingress
+    layer: network
+
+test:
+  enabled: false
+
+NOTES:
+  enabled: true

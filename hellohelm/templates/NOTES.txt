@@ -1,0 +1,15 @@
+{{- if .Values.NOTES.enabled }}
+Thank you for installing {{ .Chart.Name }}.
+
+Your release is named {{ .Release.Name }}.
+
+To learn more about the release, try:
+
+  $ helm status {{ .Release.Name }}
+  $ helm get all {{ .Release.Name }}
+
+
+2. Access it in your browser:
+→ http://hello.local/a
+→ http://hello.local/b
+{{- end }}
