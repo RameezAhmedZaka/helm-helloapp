@@ -1,4 +1,4 @@
-This is a Helm chart for deploying the `helloapp` application on a Kubernetes cluster using Helm.
+This is a Helm chart for deploying the helloapp application on a Kubernetes cluster using Helm.
 
 Project Structure
 ```
